@@ -43,6 +43,7 @@ public class CallbackTest {
         form.findElement(By.cssSelector("[data-test-id='phone'] input")).sendKeys("+79999999999");
         form.findElement(By.cssSelector("[data-test-id='agreement']")).click();
         form.findElement(By.cssSelector("button.button_view_extra")).click();
+        driver.getPageSource();
         WebElement result = driver.findElement(By.cssSelector("[data-test-id='order-success']")
         );
 
